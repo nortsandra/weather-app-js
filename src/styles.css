@@ -167,3 +167,16 @@ a {
 a:hover {
   color: #95ca76ab;
 }
+
+.app-footer {
+  text-align: center;
+  display: block;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #9d9d9d;
+}
+
+.app-footer a {
+  color: #3e642866;
+  text-decoration: none;
+}
