@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/26b4d30c0f.js"
+      crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container-weather-app">
+      <div class="header">
+        <form class="search-form bottom-line">
+          <div class="row padding-bottom-line">
+            <div class="col-8 searchbar-city">
+              <input
+                onfocus="value=''"
+                type="text"
+                id="city-input"
+                placeholder="Enter a city..."
+                class="form-control shadow-sm" />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control shadow-sm button-pink" />
+            </div>
+            <div class="col-1">
+              <i
+                class="fa-solid fa-location-crosshairs location"
+                type="submit"
+                id="get-current-city"></i>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="container container-weatherinfo">
+        <div class="row forecast-days">
+          <div class="col-7 d-flex">
+            <div>
+              <i class="fas fa-map-marker-alt icon-location" type="button"></i>
+            </div>
+            <div>
+              <div>
+                <p class="m-0" id="selected-city">
+                  Kyiv<span id="country-code"></span>
+                </p>
+              </div>
+              <div class="weather-details">
+                <span class="m-0" id="date"></span>
+                <span class="m-0" id="time"></span>
+                <div id="last-updated">
+                  Last updated:
+                  <br />
+                  <span id="current-day" class="current-day"></span>
+                  <br />
+                </div>
+                <br />
+                <div>Windspeed: <span id="windspeed"></span></div>
+                <div>Humidity: <span id="humidity"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 d-flex">
+            <div class="center-icon">
+              <img
+                src="https://openweathermap.org/img/wn/11d@2x.png"
+                id="main-icon" />
+            </div>
+            <div class="margin-center">
+              <div>
+                <span class="temperature"></span>
+                <span class="units"
+                  ><a href="#" id="celsius-link">°C </a>|
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+              <div id="description" class="weather-details"></div>
+            </div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="weather-forecast">
+          <div class="row bottom-line pb-2">
+            <div class="pl-2 pr-2">
+              <div class="weather-forecast-date weather-details">Mon</div>
+              <img
+                src="https://openweathermap.org/img/wn/01d@2x.png"
+                width="52px" />
+              <div class="weather-forecast-temperatures">
+                <span class="temp-max temp-min-rotterdam">10°</span>
+                <span class="temp-min">21°</span>
+              </div>
+            </div>
+
+            <div class="pl-2 pr-2">
+              <div class="weather-forecast-date weather-details">Tue</div>
+              <img
+                src="https://openweathermap.org/img/wn/02d@2x.png"
+                width="52px" />
+              <div class="weather-forecast-temperatures">
+                <span class="temp-max">10°</span>
+                <span class="temp-min">21°</span>
+              </div>
+            </div>
+
+            <div class="pl-2 pr-2">
+              <div class="weather-forecast-date weather-details">Wed</div>
+              <img
+                src="https://openweathermap.org/img/wn/03d@2x.png"
+                width="52px" />
+              <div class="weather-forecast-temperatures">
+                <span class="temp-max">10°</span>
+                <span class="temp-min">21°</span>
+              </div>
+            </div>
+
+            <div class="pl-2 pr-2">
+              <div class="weather-forecast-date weather-details">Thu</div>
+              <img
+                src="https://openweathermap.org/img/wn/04d@2x.png"
+                width="52px" />
+              <div class="weather-forecast-temperatures">
+                <span class="temp-max">10°</span>
+                <span class="temp-min">21°</span>
+              </div>
+            </div>
+
+            <div class="pl-2 pr-2">
+              <div class="weather-forecast-date weather-details">Fri</div>
+              <img
+                src="https://openweathermap.org/img/wn/11d@2x.png"
+                width="52px" />
+              <div class="weather-forecast-temperatures">
+                <span class="temp-max">10°</span>
+                <span class="temp-min">21°</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

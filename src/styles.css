@@ -1,0 +1,169 @@
+body {
+  background: rgb(117, 124, 96);
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  background: #849276;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Zen Loop", cursive;
+  font-size: 52px;
+  margin-bottom: 28px;
+}
+
+.container-weather-app {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px 40px 20px 40px;
+  border-radius: 16px;
+  background: white;
+  max-width: 700px;
+  min-width: 650px;
+}
+
+.padding-bottom-line {
+  padding-bottom: 40px;
+}
+
+.forecast-days {
+  margin-bottom: 70px;
+}
+
+.bottom-line {
+  border-bottom: 1px solid #b9b8bc45;
+}
+
+.container-weatherinfo {
+  padding: 20px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location {
+  font-size: 30px;
+  padding-top: 4px;
+  color: #2d8105e3;
+}
+
+#selected-city {
+  font-size: 40px;
+}
+
+.form-control {
+  background-color: #e3e1e9;
+  border: none;
+}
+
+.button-pink {
+  background-color: #cadc97;
+  color: white;
+  border: none;
+}
+
+.button-yellow a {
+  color: white;
+  text-decoration: none;
+}
+
+.weather-details {
+  color: #c7c6c6;
+  font-size: 14px;
+  position: relative;
+  top: -5px;
+  left: 3px;
+}
+
+.margin-center {
+  margin: auto;
+}
+
+.icon-location {
+  font-size: 32px;
+  color: #2d8105e3;
+  padding: 12px 10px 10px 10px;
+}
+
+.weather-icon {
+  font-size: 40px;
+}
+
+.weather-icon-temp {
+  padding: 0 20px 0 20px;
+  font-size: 52px;
+}
+
+.center-icon {
+  display: flex;
+  align-items: center;
+}
+
+.temperature {
+  font-size: 40px;
+}
+
+.temp-icon {
+  margin: 24px 10px 10px 50px;
+}
+
+.padding-location {
+  padding: 20px 7px 20px 0;
+}
+
+.weather-information {
+  margin: 10px;
+}
+
+.weather-forecast {
+  text-align: center;
+  align-self: center;
+  padding-bottom: 22px;
+}
+
+.padding-bottom {
+  padding-bottom: 15px;
+  margin: 0px;
+}
+
+.card-styling {
+  padding: 16px 0 0 0;
+  margin: 10px;
+  background-color: #fafafaba;
+  text-align: center;
+}
+
+.card-title {
+  color: #9d9d9d;
+  font-size: 14px;
+}
+
+.temp-max {
+  font-size: 18px;
+  color: #3e642866;
+  font-weight: bold;
+}
+
+.temp-min {
+  font-size: 18px;
+  color: #2f571866;
+  font-weight: bold;
+}
+
+#celsius-link,
+#fahrenheit-link {
+  text-decoration: none;
+}
+
+.units {
+  position: relative;
+  top: -10px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #95ca76ab;
+}
