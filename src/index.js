@@ -34,7 +34,6 @@ function search(event) {
   let cityElement = document.querySelector("#selected-city");
   let cityInput = document.querySelector("#city-input");
   cityElement.innerHTML = cityInput.value;
-  cityInput.value = "";
 }
 
 let searchForm = document.querySelector(".search-form");
