@@ -29,6 +29,8 @@ let dateElement = document.querySelector("#current-day");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
+// City search
+
 function search(event) {
   event.preventDefault();
   let cityElement = document.querySelector("#selected-city");
