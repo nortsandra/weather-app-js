@@ -41,26 +41,6 @@ function search(event) {
 let searchForm = document.querySelector(".search-form");
 searchForm.addEventListener("submit", search);
 
-// Celcius and Fahrenheit
-
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector(".temperature");
-  temperatureElement.innerHTML = 48;
-}
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
-
-function convertToCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector(".temperature");
-  temperatureElement.innerHTML = 9;
-}
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
-
 // Search Engine
 
 let form = document.querySelector(".search-form");
