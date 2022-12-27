@@ -100,7 +100,7 @@ h1 {
 }
 
 .temperature {
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .temp-icon {
@@ -150,8 +150,7 @@ h1 {
   font-weight: bold;
 }
 
-#celsius-link,
-#fahrenheit-link {
+#celsius-link {
   text-decoration: none;
 }
 
