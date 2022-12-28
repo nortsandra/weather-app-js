@@ -52,7 +52,7 @@ h1 {
 }
 
 .form-control {
-  background-color: #e8f0fe;
+  background-color: #e3e1e9;
   border: none;
 }
 
@@ -97,10 +97,24 @@ h1 {
 .center-icon {
   display: flex;
   align-items: center;
+  margin-top: 50px;
 }
 
 .temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.temperature-number {
+  display: inline-block;
   font-size: 60px;
+  margin-left: 10px;
+}
+
+.temperature-units {
+  display: inline-block;
 }
 
 .temp-icon {
@@ -154,11 +168,6 @@ h1 {
   text-decoration: none;
 }
 
-.units {
-  position: relative;
-  top: -10px;
-}
-
 a {
   color: black;
 }
@@ -178,4 +187,16 @@ a:hover {
 .app-footer a {
   color: #3e642866;
   text-decoration: none;
+}
+
+.inner-weather-details {
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-temperature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

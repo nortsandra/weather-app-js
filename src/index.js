@@ -67,7 +67,7 @@ function displayConditions(response) {
   windELement.innerHTML = Math.round(response.data.wind.speed) + ` km/h`;
   descriptionElement.innerHTML = response.data.weather[0].description;
   document.querySelector("#selected-city").innerHTML = response.data.name;
-  document.querySelector(".temperature").innerHTML = Math.round(
+  document.querySelector(".temperature-number").innerHTML = Math.round(
     response.data.main.temp
   );
   document
