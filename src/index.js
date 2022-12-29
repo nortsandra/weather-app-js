@@ -81,12 +81,19 @@ function displayConditions(response) {
 }
 
 // Forecast
+
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   return days[day];
+}
+
+function getForecast(coordinates) {
+  let apiKey = "f8edd982a4a7077051d3a896edb21fe6";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayForecast(response) {
@@ -116,12 +123,6 @@ function displayForecast(response) {
   });
   forecastHtml = forecastHtml + `</div>`;
   forecastElement.innerHTML = forecastHtml;
-}
-
-function getForecast(coordinates) {
-  let apiKey = "f8edd982a4a7077051d3a896edb21fe6";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayForecast);
 }
 
 // Current location
