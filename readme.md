@@ -1,0 +1,2 @@
+This project was created using HTML, CSS and vanilla JavaScript, and of course with some help from a boostrap. The goal of this website is to show weather forecast for the week using real data in real time. I used OpenWeather API and impelemeted it's data into the code so it will work. You can change citites, or find wethaer for you city by clicking on the location button.
+I built this project using VS Code and deployed using Git and Netlify.
